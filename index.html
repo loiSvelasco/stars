@@ -501,10 +501,12 @@ var Clock = (function() {
         }, 
         press = false, 
         quiver = true, 
-        texts = ["", "Hi pretty!", "don't overwork!", "sleep ka rin", "kailangan yan", 
-		"close your eyes", "and relax,", "okay? :)", "good night!", "sleep well!", "sweet dreams!", "ingat ka lagi!", "<3", 
-        "sabihin ko ulit.", "Always,", "I'll be here", "for you.", "<3", "P.S.", "salamat ha?", "for this night", "nakausap kita", "sending you --", "lots of hugs!",
-        "warm and tight", "hugs!!!"
+        texts = ["", "Hi precious!", "night time na", "make a wish!", "sigurado ako", "tutupad yan!", 
+		"kasi nakikinig", "ang stars", "at comets.", "sila bahala :)", "don't worry", 
+        "just believe", "pahinga na :)", "good night!", "sleep well!", "take care!", 
+        "Dito lang ako", "makikinig ako", "Always.. :)", "for you.", "and again,", 
+        "sending you", "lots of hugs!","warm, tight", "hugs!!!", "cutie mo kasi", 
+        "sweetdreams!"
 		],
         
         text = texts[0],
@@ -540,7 +542,8 @@ var Clock = (function() {
 
         ctx.fillStyle = "rgb(255, 255, 255)";
         ctx.textBaseline = "middle";
-        ctx.font = textSize + "px 'Avenir', 'Helvetica Neue', 'Arial', 'sans-serif'";
+        // ctx.font = textSize + "px 'Avenir', 'Helvetica Neue', 'Arial', 'sans-serif'";
+        ctx.font = textSize + "px 'Verdana', 'sans-serif'";
         ctx.fillText(text, (width - ctx.measureText(text).width) * 0.5, height * 0.5);
 
         var imgData = ctx.getImageData(0, 0, width, height);
